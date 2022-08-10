@@ -8,7 +8,12 @@ int main() {
     int size = sizeof(arr) / sizeof(arr[0]);
 
     for(int i = 0; i < size; i++) {
-        cout<<arr[i]<<" ";
+        // cout<<arr[i] * 2<<" ";
+        arr[i] *= 2;
+    }
+
+    for(int i = 0; i < size; i++) {
+        cout<<arr[i]<< " ";
     }
 
     return 0;

@@ -10,7 +10,5 @@ int main() {
         cout<< x << " Hmm ";
     }
 
-
-
     return 0;
 }
