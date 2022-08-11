@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// Wrost logic ever
+
 // int maximum_in_an_array(int arr[], int size) {
 
 //     sort(arr, arr + size);
@@ -17,14 +19,27 @@ using namespace std;
 
 // }
 
-int maximum_in_an_array(int arr[], int size) {
-    int maximum;
-    for(int i = 0 ; i < size; i++) {
-        maximum = *max_element(arr, arr + size);
-    }
+// logic 1
 
-    return maximum;
+int maximum_in_an_array(int arr[], int size) {
+    for(int i = 1; i < size; i++) {
+        if(arr[0] < arr[i]) {
+            arr[0] = arr[i];
+        }
+    }
+    return arr[0];
 }
+
+// logic 2
+
+// int maximum_in_an_array(int arr[], int size) {
+//     int maximum;
+//     for(int i = 0 ; i < size; i++) {
+//         maximum = *max_element(arr, arr + size);
+//     }
+
+//     return maximum;
+// }
 
 int main() {
 
