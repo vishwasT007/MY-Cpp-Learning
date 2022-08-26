@@ -14,15 +14,13 @@ void printing_Pairs(int arr[], int size) {
     
 
 }
+//time complexity : O(N^2)
 
 int main() {
 
     int arr[] = {1,2,3,4};
     int size = sizeof(arr) / sizeof(int);
     printing_Pairs(arr,size);
-
-
-
 
 
     return 0;
